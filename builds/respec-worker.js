@@ -1,6 +1,12 @@
 // ReSpec Worker v1.0.0
 try {
   importScripts("https://www.w3.org/Tools/respec/respec-highlight");
+  importScripts(
+    "https://cdn.jsdelivr.net/gh/redmer/highlightjs-turtle@1.0/dist/turtle.min.js"
+  );
+  importScripts(
+    "https://cdn.jsdelivr.net/gh/redmer/highlightjs-sparql@1.0/dist/sparql.min.js"
+  );
 } catch (err) {
   console.error("Network error loading highlighter", err);
 }
