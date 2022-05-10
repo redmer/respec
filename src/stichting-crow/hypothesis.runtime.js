@@ -53,10 +53,9 @@ function renderPlaceholder() {
 
 function loadButtonListener() {
   return event => {
-    /** @type {{ target?: HTMLButtonElement; type?: any; }} */
     const { target, type } = event;
 
-    if (!(target instanceof HTMLElement)) return;
+    if (!(target instanceof HTMLButtonElement)) return;
 
     // For keys, we only care about Enter key to activate the panel
     // otherwise it's activated via a click.
@@ -70,10 +69,9 @@ function loadButtonListener() {
 
 function unloadButtonListener() {
   return event => {
-    /** @type {{ target?: HTMLButtonElement; type?: any; }} */
     const { target, type } = event;
 
-    if (!(target instanceof HTMLElement)) return;
+    if (!(target instanceof HTMLButtonElement)) return;
 
     // For keys, we only care about Enter key to activate the panel
     // otherwise it's activated via a click.
