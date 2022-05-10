@@ -29,7 +29,6 @@ const titleRegex = /^([A-Z]{3,10}\s+"([^\n]+)"\n)/;
  * @param {Conf} conf
  */
 export function run(conf) {
-  console.log("ahhahahaha");
   const quotes = document.querySelectorAll("section > blockquote");
   quotes.forEach(quote => {
     const keywordResults = firstWordRegex.exec(quote.textContent.trimStart());
