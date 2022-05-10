@@ -298,7 +298,7 @@ export function renderFeedback(conf) {
     definitions.push(html`<dd>${mailingListLink} ${emailSubject}</dd>`);
   }
 
-  if (conf.hypothesisComments && conf.isInReview) {
+  if (conf.hypothesisComments) {
     definitions.push(
       html` <dd hidden id="annotation-service-placeholder">
         <button type="button" data-load-annotation-service>

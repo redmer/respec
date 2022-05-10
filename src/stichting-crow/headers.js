@@ -341,7 +341,8 @@ export async function run(conf) {
   }
 
   conf.subjectPrefix = conf.subjectPrefix ?? `[${conf.shortName}] `;
-  conf.isInReview = ["CR", "PR", "OR", "IR"].includes(conf.specStatus);
+  conf.isInReview =
+    conf.isInReview || ["CR", "PR", "OR", "IR"].includes(conf.specStatus);
 
   //* Setting conf.publishDate
   conf.publishDate = validateDateAndRecover(
