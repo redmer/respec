@@ -365,6 +365,7 @@ export async function run(conf) {
 
   //* Setting conf.edDraftURI | URL of the GitHub Pages draft document
   // edDraftURI is set by github.js
+  conf.edDraftURI = docsHome(conf.shortName);
   //* Setting conf.thisVersion | URL of the current document
   //* Setting conf.latestVersion | URL of the latest DEF/DOC version
   //* Setting conf.prevVersion | URL of the previous maturity version

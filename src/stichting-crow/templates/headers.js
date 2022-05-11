@@ -41,7 +41,7 @@ const localizationStrings = {
     with_subject_line: "with subject line",
     your_topic_here: "YOUR TOPIC HERE",
     view_annotations: "Show annotations",
-    load_annotation_service: "Load annotation service",
+    load_annotation_service: "Load annotations",
     pull_requests: "pull requests",
     new_issue: "new issue",
     open_issues: "open issues",
@@ -52,7 +52,7 @@ const localizationStrings = {
     >`,
     total_annotation_count: count =>
       html`${count} annotation(s) with <em>Hypothes.is</em>`,
-    unload_annotation: "Hide and reload",
+    unload_annotation: "Hide annotations",
     link_license: (url, short, licenseInfo) => html` and
       <a rel="license" href="${url}" title="${licenseInfo.name}">${short}</a>
       rules apply.`,
@@ -93,7 +93,7 @@ const localizationStrings = {
     latest_published_version: "Laatst gepubliceerde versie:",
     this_version: "Deze versie:",
     view_annotations: "Toon annotatiebalk",
-    load_annotation_service: "Laad annotatieservice",
+    load_annotation_service: "Laad annotaties",
     load_annotation_service_info: html`<small
       >Annotaties door <a href="https://web.hypothes.is">Hypothes.is</a> (<a
         href="https://web.hypothes.is/privacy"
@@ -102,13 +102,13 @@ const localizationStrings = {
     >`,
     total_annotation_count: count =>
       html`${count} annotatie(s) met <em>Hypothes.is</em>`,
-    unload_annotation: "Verberg en herlaad",
+    unload_annotation: "Verberg",
     link_license: (url, short, licenseInfo) => html`
       van toepassing en gedistribueerd onder
       <a rel="license" href="${url}" title="${licenseInfo.name_nl}">${short}</a>
     `,
     unlicensed_notice: "DIT DOCUMENT HEEFT GEEN LICENTIE",
-    errata_exist: "Errata bestaan",
+    errata_exist: "Errata beschikbaar",
   },
 };
 export const l10n = getIntlData(localizationStrings);

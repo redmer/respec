@@ -4,7 +4,7 @@ const SETTING_VALUE_ALLOWED = "allowed";
 const hClientDefault = {
   openSidebar: false,
   showHighlights: true,
-  theme: "clean",
+  theme: "classic",
   branding: {
     accentColor: "rgb(0, 157, 224)",
     appBackgroundColor: "white",

@@ -256,9 +256,8 @@ const localizationStrings = {
     proposed_corrections: html`Voorgestelde correcties zijn in het document
     gemarkeerd.`,
     comments_github: issueBase => html`<p>
-      <a href="${issueBase}">GitHub Issues</a> heeft de voorkeur voor de
-      discussie van dit document. Eén issue per onderwerp vereenvoudigt de
-      verwerking.
+      <a href="${issueBase}">GitHub Issues</a> wordt gebruikt voor de discussie
+      van dit document. Eén issue per onderwerp vereenvoudigt de verwerking.
     </p> `,
     comments_hypothesis: html`<p>
       Reviewcommentaar mag ook achtergelaten worden als
@@ -288,8 +287,8 @@ export default (conf, opts) => {
     <p><em>${l10n.status_at_publication}</em></p>
     ${conf.isUnofficial ? renderIsUnofficialDisclaimer(conf) : ""}
     <p>
-      ${l10n.endorsement_specStatus(conf.specStatus, conf)}
       ${l10n.desc_specStatus(conf.specStatus)}
+      ${l10n.endorsement_specStatus(conf.specStatus, conf)}
     </p>
     ${l10n.update_policy_specStatus(conf.specStatus)}
     ${conf.isInReview ? renderReviewElements(conf) : ""}
