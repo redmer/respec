@@ -108,7 +108,7 @@ export function run(conf) {
 
 function processLogos(conf) {
   const defaultImprint = imprints["crow"];
-  let imprintInfo = imprints[conf.imprint];
+  let imprintInfo = imprints[conf.imprint ?? "crow"];
   if (!imprintInfo) {
     const msg = `The \`"imprint"\` configuration value is not recognized.`;
     const hint = `Select a known imprint from <https://docs.crow.nl/respec-design/stichting-crow/#logos>.`;
