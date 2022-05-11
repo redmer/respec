@@ -97,6 +97,7 @@ a[href].orcid > svg {
 a .secno,
 a .figno {
   color: #000;
+  color: var(--toclink-text);
 }
 
 ul.tof,

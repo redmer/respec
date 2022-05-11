@@ -20,6 +20,8 @@ dfn {
   padding: 0.5em 0.75em;
   margin-top: 0.6em;
   font: small Helvetica Neue, sans-serif, Droid Sans Fallback;
+  font-size: small;
+  font-family: MuseoSans, "Museo Sans", Museo, sans-serif;
   background: #fff;
   color: black;
   box-shadow: 0 1em 3em -0.4em rgba(0, 0, 0, 0.3),
